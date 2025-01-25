@@ -22,7 +22,7 @@ public abstract class BaseActivity extends ProvisionBaseActivity {
     private boolean mCheckNewJump = true;
     private boolean mIsDisableBack = false;
 
-    private View.OnClickListener mBackListener = _ -> onBackPressed();
+    private final View.OnClickListener mBackListener = v -> onBackPressed();
 
     protected abstract Fragment getFragment();
     protected abstract String getFragmentTag();
@@ -65,10 +65,6 @@ public abstract class BaseActivity extends ProvisionBaseActivity {
         }
     }
 
-    protected String getTitleStringText() {
-        return "";
-    }
-
     protected CharSequence getDescriptionContent() {
         return null;
     }
@@ -88,7 +84,7 @@ public abstract class BaseActivity extends ProvisionBaseActivity {
         }
         if (mFragment != null) {
             View description = mFragment.getView().findViewById(R.id.list_description);
-            if (description != null && (description instanceof TextView)) {
+            if ((description instanceof TextView)) {
                 CharSequence listDescCharSequence = getListDescCharSequence();
                 if (listDescCharSequence != null) {
                     description.setTextDirection(OobeUtils.isRTL() ? 4 : 3);
@@ -100,7 +96,7 @@ public abstract class BaseActivity extends ProvisionBaseActivity {
                 }
             }
             View view = mFragment.getView().findViewById(R.id.description);
-            if (view != null && view instanceof TextView) {
+            if (view instanceof TextView) {
                 CharSequence descriptionContent = getDescriptionContent();
                 if (!TextUtils.isEmpty(descriptionContent)) {
                     view.setTextDirection(OobeUtils.isRTL() ? 4 : 3);

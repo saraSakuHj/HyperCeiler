@@ -13,7 +13,7 @@ on:
       - ".github/workflows/crowdin.yml"
       - "crowdin.yml"
   push:
-    branches: [main]
+    branches: [main, mavenLocal]
     paths-ignore:
       - ".github/**"
       - "!.github/workflows/**"
@@ -39,13 +39,13 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '22'
+          java-version: '21'
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
       - name: Create Sign File
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/mavenLocal'
         run: |
           touch signing.properties
           echo storePassword=${{ secrets.KEY_STORE_PASSWORD }} >> signing.properties
@@ -55,7 +55,7 @@ jobs:
           echo ${{ secrets.SIGNING_KEY }} | base64 --decode > key.jks
 
       - name: Build with Gradle (Canary)
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/mavenLocal'
         shell: bash
         run: |
           ./gradlew assembleCanary

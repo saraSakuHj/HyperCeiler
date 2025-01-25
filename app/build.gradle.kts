@@ -95,10 +95,6 @@ android {
         }
     }
 
-    buildFeatures {
-        buildConfig = true
-    }
-
     androidResources {
         additionalParameters += listOf("--allow-reserved-package-id", "--package-id", "0x36")
     }
@@ -192,7 +188,7 @@ android {
             signingConfig = if (properties != null) {
                 signingConfigs["hasProperties"]
             } else {
-                signingConfigs["withoutProperties"]
+                signingConfigs["debug"]
             }
         }
         debug {
@@ -205,25 +201,42 @@ android {
         }
     }
 
-    java {
-        toolchain {
-            languageVersion = JavaLanguageVersion.of(21)
-        }
-    }
-
-    kotlin.jvmToolchain(21)
-
     buildFeatures {
         aidl = true
-    }
-
-    // https://stackoverflow.com/a/77745844
-    tasks.withType<PackageAndroidArtifact> {
-        doFirst { appMetadata.asFile.orNull?.writeText("") }
+        buildConfig = true
     }
 }
 
+// https://stackoverflow.com/a/77745844
+tasks.withType<PackageAndroidArtifact> {
+    doFirst { appMetadata.asFile.orNull?.writeText("") }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+kotlin.jvmToolchain(21)
+
 dependencies {
+    implementation(libs.core)
+    implementation(libs.fragment)
+    implementation(libs.recyclerview)
+    implementation(libs.coordinatorlayout)
+    implementation(libs.constraintlayout) {
+        exclude("androidx.appcompat", "appcompat")
+    }
+
+    implementation(projects.miuix)
+    val directory = File("libs")
+    val files = directory.listFiles()?.filter { it.isFile } ?: emptyList()
+    for (i in files) {
+        val groupName = i.name.substring(startIndex = 0, endIndex = i.name.length - 10)
+        implementation("fan:$groupName:3.0")
+    }
+
     compileOnly(projects.hiddenApi)
     compileOnly(libs.xposed.api)
 

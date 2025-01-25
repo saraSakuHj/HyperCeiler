@@ -14,7 +14,7 @@ import fan.preference.TextPreference;
 
 public class XmlPreference extends TextPreference {
 
-    private int mInflatedXml;
+    private final int mInflatedXml;
 
     public XmlPreference(@NonNull Context context) {
         this(context, null);

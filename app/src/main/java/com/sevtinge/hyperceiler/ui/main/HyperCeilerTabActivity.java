@@ -173,10 +173,9 @@ public class HyperCeilerTabActivity extends NaviBaseActivity
                 if (intent != null) {
                     Bundle bundle = intent.getExtras();
                     if (bundle != null) {
-                        String xmlPath = (String) bundle.get("inflatedXml");
+                        String xmlPath = bundle.getString("inflatedXml");
                         if (!TextUtils.isEmpty(xmlPath)) {
-                            if (args == null) args = new Bundle();
-                            String[] split = xmlPath.split("\\/");
+                            String[] split = xmlPath.split("/");
 
                             String[] split2 = split[2].split("\\.");
                             if (split.length == 3) {
@@ -197,6 +196,7 @@ public class HyperCeilerTabActivity extends NaviBaseActivity
         return true;
     }
 
+    /*
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
@@ -204,13 +204,15 @@ public class HyperCeilerTabActivity extends NaviBaseActivity
     }
 
     private void requestCta() {
-        /*if (!CtaUtils.isCtaEnabled(this)) {
+        if (!CtaUtils.isCtaEnabled(this)) {
             CtaUtils.showCtaDialog(this, REQUEST_CODE);
-        }*/
+        }
     }
+    */
 
+    /*
     public void test() {
-        /*boolean ls = shellExec.append("ls").sync().isResult();
+        boolean ls = shellExec.append("ls").sync().isResult();
         AndroidLogUtils.LogI(ITAG.TAG, "ls: " + ls);
         AndroidLogUtils.LogI(ITAG.TAG, shellExec.getOutPut().toString() + shellExec.getError().toString());
         boolean f = shellExec.append("for i in $(seq 1 500); do echo $i; done").isResult();
@@ -218,8 +220,9 @@ public class HyperCeilerTabActivity extends NaviBaseActivity
         AndroidLogUtils.LogI(ITAG.TAG, shellExec.getOutPut().toString());
         boolean k = shellExec.append("for i in $(seq 1 500); do echo $i; done").sync().isResult();
         AndroidLogUtils.LogI(ITAG.TAG, "fork: " + k);
-        AndroidLogUtils.LogI(ITAG.TAG, shellExec.getOutPut().toString());*/
+        AndroidLogUtils.LogI(ITAG.TAG, shellExec.getOutPut().toString());
     }
+     */
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

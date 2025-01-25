@@ -1,10 +1,12 @@
+import com.android.build.gradle.internal.tasks.factory.dependsOn
+
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
+    id("maven-publish")
 }
 
 android {
-    namespace = "com.android.internal"
+    namespace = "fan.miuix"
     compileSdk = 35
 
     buildTypes {
@@ -35,14 +37,25 @@ android {
     }
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+publishing {
+    publications {
+        val directory = File("../libs")
+        val files = directory.listFiles()?.filter { it.isFile } ?: emptyList()
+
+        for (i in files) {
+            val groupName = i.name.substring(startIndex = 0, endIndex = i.name.length - 10)
+
+            create<MavenPublication>(groupName) {
+                groupId = "fan"
+                artifactId = groupName
+                version = "3.0"
+                artifact("../libs/$groupName-debug.aar")
+            }
+        }
     }
 }
 
-kotlin.jvmToolchain(21)
-
-dependencies {
-    implementation(libs.annotation)
+afterEvaluate {
+    tasks.clean.dependsOn("publishToMavenLocal")
+    tasks.preBuild.dependsOn("publishToMavenLocal")
 }
