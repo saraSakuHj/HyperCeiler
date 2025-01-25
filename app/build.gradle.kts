@@ -136,12 +136,6 @@ android {
             enableV3Signing = true
             enableV4Signing = true
         }
-        create("withoutProperties") {
-            enableV1Signing = true
-            enableV2Signing = true
-            enableV3Signing = true
-            enableV4Signing = true
-        }
     }
 
     buildTypes {
@@ -158,7 +152,7 @@ android {
             signingConfig = if (properties != null) {
                 signingConfigs["hasProperties"]
             } else {
-                signingConfigs["withoutProperties"]
+                signingConfigs["debug"]
             }
         }
         create("beta") {
@@ -173,7 +167,7 @@ android {
             signingConfig = if (properties != null) {
                 signingConfigs["hasProperties"]
             } else {
-                signingConfigs["withoutProperties"]
+                signingConfigs["debug"]
             }
         }
         create("canary") {
