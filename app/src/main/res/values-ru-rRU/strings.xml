@@ -760,6 +760,7 @@
     <string name="system_ui_statusbar_network_speed_hide_slow_desc">Значения скорости сети ниже этого уровня считаются низкими и будет отображаться другой значок индикатора (только часть значков).</string>
     <string name="system_ui_statusbar_network_speed_sec_unit">Скрыть суффикс байт в секунду (*b/s)</string>
     <string name="system_ui_statusbar_network_speed_icon">Значок индикатора</string>
+    <string name="system_ui_statusbar_clock_tip">Инструкции по использованию: \ n-После использования просветления, пожалуйста, измените формат часов на дисплее, чтобы изменить приложение. Если формат часов содержит количество секунд, пожалуйста, включите функцию \"Обновить секунды\".</string>
     <string name="system_ui_statusbar_clock_double_mode_title">Выравнивание двойных строк</string>
     <string name="system_ui_statusbar_clock_desc">Пример формата часов</string>
     <string name="system_ui_statusbar_clock_size">Размер часов</string>
@@ -776,6 +777,7 @@
     <string name="system_ui_statusbar_clock_layout_b">Большие часы на панели уведомлений</string>
     <string name="system_ui_statusbar_clock_layout_n">Мини-часы на панели уведомлений</string>
     <string name="system_ui_statusbar_clock_editor_s">Формат часов в строке состояния</string>
+    <string name="system_ui_statusbar_clock_editor_b">Уведомление в формате больших часов</string>
     <string name="system_ui_statusbar_clock_editor_n">Формат мини-часов на панели уведомлений</string>
     <string name="system_ui_statusbar_clock_style_f">Расположение часов в строке состояния</string>
     <string name="system_ui_status_bar_strong_toast_layout">Отображение</string>
