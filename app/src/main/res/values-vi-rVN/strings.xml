@@ -762,6 +762,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="system_ui_statusbar_network_speed_hide_slow_desc">Khi giá trị tốc độ mạng thấp hơn mức này, nó được coi là chậm và một số biểu tượng chỉ báo sẽ hiển thị các biểu tượng chỉ báo khác nhau</string>
     <string name="system_ui_statusbar_network_speed_sec_unit">Ẩn hậu tố Byte trên giây (*b/s)</string>
     <string name="system_ui_statusbar_network_speed_icon">Biểu tượng chỉ báo</string>
+    <string name="system_ui_statusbar_clock_tip">Hướng dẫn sử dụng: \ n-Sau khi sử dụng làm sáng, vui lòng sửa đổi định dạng đồng hồ trong màn hình để thay đổi ứng dụng. Nếu định dạng đồng hồ chứa số giây, vui lòng bấm \"Chuyển đổi làm mới giây\"</string>
     <string name="system_ui_statusbar_clock_double_mode_title">Căn chỉnh hàng đôi</string>
     <string name="system_ui_statusbar_clock_desc">Ví dụ về định dạng đồng hồ</string>
     <string name="system_ui_statusbar_clock_size">Kích thước đồng hồ (0 là giá trị gốc)</string>
@@ -778,6 +779,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="system_ui_statusbar_clock_layout_b">Đồng hồ lớn trên thanh thông báo</string>
     <string name="system_ui_statusbar_clock_layout_n">Đồng hồ nhỏ trên thanh thông báo</string>
     <string name="system_ui_statusbar_clock_editor_s">Định dạng đồng hồ trên thanh trạng thái</string>
+    <string name="system_ui_statusbar_clock_editor_b">Định dạng thông báo đồng hồ lớn</string>
     <string name="system_ui_statusbar_clock_editor_n">Định dạng đồng hồ nhỏ trên thanh thông báo</string>
     <string name="system_ui_statusbar_clock_style_f">Sắp xếp đồng hồ trên thanh trạng thái</string>
     <string name="system_ui_status_bar_strong_toast_layout">Bố cục</string>
