@@ -39,7 +39,7 @@ android {
 
 publishing {
     publications {
-        val directory = File("../libs")
+        val directory = File("libs")
         val files = directory.listFiles()?.filter { it.isFile } ?: emptyList()
 
         for (i in files) {
