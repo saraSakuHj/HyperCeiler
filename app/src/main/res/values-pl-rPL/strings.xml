@@ -386,6 +386,8 @@
     <string name="tiles_5g">Sieć 5G</string>
     <string name="dashboard_5g">Używaj 5G</string>
     <string name="tiles_sunshine_mode">Tryb słoneczny</string>
+    <string name="system_cc_showpct_style_1">w linii</string>
+    <string name="system_cc_showpct_style_2">jawny</string>
     <!--System Framework-->
     <string name="system_framework">System Android</string>
     <string name="system_framework_volume_title">Głośność</string>
@@ -744,6 +746,7 @@
     <string name="system_ui_statusbar_network_speed_hide_slow_desc">Wartości prędkości sieci poniżej tego poziomu są uważane za powolne, a wyświetlana będzie inna ikona wskaźnika (tylko niektóre ikony)</string>
     <string name="system_ui_statusbar_network_speed_sec_unit">Ukryj sufiks bajtów na sekundę (*b/s)</string>
     <string name="system_ui_statusbar_network_speed_icon">Ikona wskaźnika</string>
+    <string name="system_ui_statusbar_clock_tip">Instrukcje użytkowania:\n• Po włączeniu funkcji podpowiedzi, zmień format zegara na wyświetlaczu, aby zmienić aplikację. Jeśli format zegara zawiera sekundy, włącz funkcję \"Przełącznik odświeżania sekund\".</string>
     <string name="system_ui_statusbar_clock_double_mode_title">Podwójne wyrównanie wierszy</string>
     <string name="system_ui_statusbar_clock_desc">Przykładowy format zegara</string>
     <string name="system_ui_statusbar_clock_size">Rozmiar zegara</string>
@@ -760,6 +763,7 @@
     <string name="system_ui_statusbar_clock_layout_b">Duży zegar w pasku powiadomień</string>
     <string name="system_ui_statusbar_clock_layout_n">Mini zegar w pasku powiadomień</string>
     <string name="system_ui_statusbar_clock_editor_s">Format zegara paska stanu</string>
+    <string name="system_ui_statusbar_clock_editor_b">Format dużego zegara w panelu powiadomień</string>
     <string name="system_ui_statusbar_clock_editor_n">Format mini zegara w pasku powiadomień</string>
     <string name="system_ui_statusbar_clock_style_f">Układ zegara na pasku stanu</string>
     <string name="system_ui_status_bar_strong_toast_layout">Układ</string>
@@ -884,6 +888,7 @@
     <string name="system_ui_disable_infinitymode_gesture_sum">Tylko dla tabletów</string>
     <string name="system_ui_disable_bottombar">Ukryj gest dolny małego okna</string>
     <string name="system_ui_others_pct_title">Wyświetlanie danych</string>
+    <string name="system_cc_showpct_style">Styl wyświetlania procentu danych</string>
     <string name="system_showpct_title">Wyświetlaj procent jasności</string>
     <string name="system_cc_volume_showpct_title">Wyświetl procent głośności</string>
     <string name="system_ui_others_showpct_top">Górna wartość procentowa</string>
