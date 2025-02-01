@@ -386,6 +386,8 @@
     <string name="tiles_5g">Сеть 5G</string>
     <string name="dashboard_5g">Использовать 5G</string>
     <string name="tiles_sunshine_mode">Солнечный режим</string>
+    <string name="system_cc_showpct_style_1">встроенный</string>
+    <string name="system_cc_showpct_style_2">явный</string>
     <!--System Framework-->
     <string name="system_framework">Системный фреймворк</string>
     <string name="system_framework_volume_title">Громкость</string>
@@ -744,6 +746,7 @@
     <string name="system_ui_statusbar_network_speed_hide_slow_desc">Значения скорости сети ниже этого уровня считаются низкими и будет отображаться другой значок индикатора (только часть значков).</string>
     <string name="system_ui_statusbar_network_speed_sec_unit">Скрыть суффикс байт в секунду (*b/s)</string>
     <string name="system_ui_statusbar_network_speed_icon">Значок индикатора</string>
+    <string name="system_ui_statusbar_clock_tip">Инструкции по использованию:\n• После включения функции просветления измените формат часов на дисплее, чтобы переключить приложение. Если формат часов включает секунды, включите функцию \"Переключатель обновления секунд\".</string>
     <string name="system_ui_statusbar_clock_double_mode_title">Выравнивание двойных строк</string>
     <string name="system_ui_statusbar_clock_desc">Пример формата часов</string>
     <string name="system_ui_statusbar_clock_size">Размер часов</string>
@@ -760,6 +763,7 @@
     <string name="system_ui_statusbar_clock_layout_b">Большие часы на панели уведомлений</string>
     <string name="system_ui_statusbar_clock_layout_n">Мини-часы на панели уведомлений</string>
     <string name="system_ui_statusbar_clock_editor_s">Формат часов в строке состояния</string>
+    <string name="system_ui_statusbar_clock_editor_b">Оттенок уведомления в большом формате часов</string>
     <string name="system_ui_statusbar_clock_editor_n">Формат мини-часов на панели уведомлений</string>
     <string name="system_ui_statusbar_clock_style_f">Расположение часов в строке состояния</string>
     <string name="system_ui_status_bar_strong_toast_layout">Отображение</string>
@@ -884,6 +888,7 @@
     <string name="system_ui_disable_infinitymode_gesture_sum">Только для планшета</string>
     <string name="system_ui_disable_bottombar">Скрыть нижний жест маленького окна</string>
     <string name="system_ui_others_pct_title">Отображение данных</string>
+    <string name="system_cc_showpct_style">Стиль отображения данных в процентах</string>
     <string name="system_showpct_title">Отображать процент яркости</string>
     <string name="system_cc_volume_showpct_title">Отображать процентное содержание звука</string>
     <string name="system_ui_others_showpct_top">Верхний процент</string>

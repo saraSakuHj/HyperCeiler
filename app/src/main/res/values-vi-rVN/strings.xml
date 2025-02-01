@@ -386,6 +386,8 @@
     <string name="tiles_5g">5G</string>
     <string name="dashboard_5g">Dùng 5G</string>
     <string name="tiles_sunshine_mode">Chế độ ngoài trời</string>
+    <string name="system_cc_showpct_style_1">nội tuyến</string>
+    <string name="system_cc_showpct_style_2">rõ ràng</string>
     <!--System Framework-->
     <string name="system_framework">Framework hệ thống</string>
     <string name="system_framework_volume_title">Âm lượng</string>
@@ -746,6 +748,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="system_ui_statusbar_network_speed_hide_slow_desc">Khi giá trị tốc độ mạng thấp hơn mức này, nó được coi là chậm và một số biểu tượng chỉ báo sẽ hiển thị các biểu tượng chỉ báo khác nhau</string>
     <string name="system_ui_statusbar_network_speed_sec_unit">Ẩn hậu tố Byte trên giây (*b/s)</string>
     <string name="system_ui_statusbar_network_speed_icon">Biểu tượng chỉ báo</string>
+    <string name="system_ui_statusbar_clock_tip">Hướng dẫn sử dụng:\n• Sau khi bật tính năng làm sáng, vui lòng sửa đổi định dạng đồng hồ trên màn hình để chuyển đổi ứng dụng. Nếu định dạng đồng hồ bao gồm giây, vui lòng bật tính năng \"Chuyển đổi làm mới giây\".</string>
     <string name="system_ui_statusbar_clock_double_mode_title">Căn chỉnh hàng đôi</string>
     <string name="system_ui_statusbar_clock_desc">Ví dụ về định dạng đồng hồ</string>
     <string name="system_ui_statusbar_clock_size">Kích thước đồng hồ (0 là giá trị gốc)</string>
@@ -762,6 +765,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="system_ui_statusbar_clock_layout_b">Đồng hồ lớn trên thanh thông báo</string>
     <string name="system_ui_statusbar_clock_layout_n">Đồng hồ nhỏ trên thanh thông báo</string>
     <string name="system_ui_statusbar_clock_editor_s">Định dạng đồng hồ trên thanh trạng thái</string>
+    <string name="system_ui_statusbar_clock_editor_b">Thanh thông báo dạng đồng hồ lớn</string>
     <string name="system_ui_statusbar_clock_editor_n">Định dạng đồng hồ nhỏ trên thanh thông báo</string>
     <string name="system_ui_statusbar_clock_style_f">Sắp xếp đồng hồ trên thanh trạng thái</string>
     <string name="system_ui_status_bar_strong_toast_layout">Bố cục</string>
@@ -886,6 +890,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="system_ui_disable_infinitymode_gesture_sum">Chỉ sử dụng cho máy tính bảng</string>
     <string name="system_ui_disable_bottombar">Ẩn cử chỉ dưới cùng của cửa sổ nhỏ</string>
     <string name="system_ui_others_pct_title">Hiển thị dữ liệu</string>
+    <string name="system_cc_showpct_style">Kiểu hiển thị phần trăm dữ liệu</string>
     <string name="system_showpct_title">Hiển thị phần trăm độ sáng</string>
     <string name="system_cc_volume_showpct_title">Hiển thị phần trăm âm thanh</string>
     <string name="system_ui_others_showpct_top">Phần trăm cao nhất</string>
@@ -1259,7 +1264,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="home_recent_hide_card_desc">Ẩn thẻ của ứng dụng đã chọn trong Gần đây</string>
     <string name="home_widget">Tiện ích</string>
     <string name="home_widget_all_widget_animation">Hoạt ảnh tiện ích</string>
-    <string name="home_widget_show_miui_widget">Hiển thị tiện ích HyperOS</string>
+    <string name="home_widget_show_miui_widget">Hiển thị tiện ích MIUI</string>
     <string name="home_widget_show_miui_widget_desc">Hiển thị tiện ích HyperOS trên trang tiện ích Android</string>
     <string name="home_widget_corner_radius">Bo tròn góc tiện ích</string>
     <string name="home_widget_allow_moved_to_minus_one_screen">Cho phép di chuyển tiện ích Android sang màn hình -1</string>
